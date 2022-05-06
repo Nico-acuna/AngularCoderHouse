@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 13fr 1fr;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-areas: "header header header" "aside main main" "aside main main"
+}
+
+.navbar {
+    grid-area: header;
+    background-color: teal;
+}
+
+.toolbar {
+    grid-area: aside;
+    background-color: orange;
+}
+
+.student {
+    grid-area: main;
+    background-color: beige;
+}
